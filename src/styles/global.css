@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  border-radius: 3px;
+}
+
+.typing-indicator::after {
+  content: '...';
+  animation: typing 1s infinite;
+}
+
+@keyframes typing {
+  0% { content: '.'; }
+  33% { content: '..'; }
+  66% { content: '...'; }
+}
